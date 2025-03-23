@@ -39,3 +39,10 @@ a {
 a:hover {
     color: darkred; /* Slightly darker shade when hovered */
 }
+.container {
+    background-color: #B0E0E6; /* Box color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
