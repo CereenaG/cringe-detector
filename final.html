@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cringe Detector - Result</title>
+    <link rel="stylesheet" href="style1.css"> <!-- Linking external CSS -->
+</head>
+<body>
+
+    <img src="logo.png" alt="Logo" class="logo">  <!-- Replace 'logo.png' with actual logo path -->
+
+    <div class="sticker-space"></div> <!-- Reserved space for animated sticker -->
+
+    <div class="result-box">
+        <h2>Your Cringe Score:</h2>
+        <p class="percentage" id="cringePercentage">0%</p>
+    </div>
+
+    <script>
+        function getRandomPercentage() {
+            return Math.floor(Math.random() * 101); // Generates 0 to 100
+        }
+
+        document.getElementById("cringePercentage").innerText = getRandomPercentage() + "%";
+    </script>
+
+</body>
+</html>

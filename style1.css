@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url('bg.jpg') no-repeat center center/cover; /* Replace with actual image */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+}
+
+.sticker-space {
+    height: 120px; /* Space reserved for animated sticker */
+}
+
+.result-box {
+    background: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 50%; /* Smaller width */
+    max-width: 300px; /* Prevents it from getting too big */
+    min-height: 60px; /* Lower height */
+}
+
+.result-box h2 {
+    margin-bottom: 5px; /* Reduced space between text and percentage */
+    font-size: 24px;
+}
+
+.percentage {
+    font-size: 70px; /* Large number */
+    font-weight: bold;
+    color: #ff5733;
+    margin-top: 0; /* Remove extra space above the number */
+}

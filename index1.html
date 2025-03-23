@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cringe Detector</title>
+ <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        input, button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function submitText() {
+            var text = document.getElementById("userInput").value;
+            if (text.trim() !== "") {
+                window.location.href = "cringe_result.html?text=" + encodeURIComponent(text);
+            } else {
+                alert("Please enter some text.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Cringe Detector</h2>
+    <p>Enter a text to check its cringe level:</p>
+    <input type="text" id="userInput" placeholder="Type something...">
+    <button onclick="submitText()">Check Cringe</button>
+</body>
+</html>
